@@ -1,0 +1,544 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: poppins;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.esquerda{
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    background-color:#121212;
+    padding: 24px 24px 90px 24px; /*cima, direita, baixo, esquerda*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/*LOGO SPOTIFY*/
+
+.logo{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/*bilioteca spotify*/
+
+.biblioteca{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.biblioteca span{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.biblioteca i{
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    transition: 0.2s ease;
+    padding: 10px;
+
+}
+
+.biblioteca i:hover{
+    transform: scale(1.05);
+    background-color: rgb(68, 68, 68);
+    color: rgb(221, 221, 221);
+    border-radius: 100%;
+}
+
+/*CRIE SUA PLAYLIST*/
+
+.primeira-playlist{
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    height: 150px;
+    background-color: #1F1F1F;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.primeira-playlist-titulo{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.primeira-playlist button{
+    width: 130px;
+    height: 28px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*PODCAST*/
+
+.podcast{
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    height: 150px;
+    background-color: #1F1F1F;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.podcast button{
+    width: 180px;
+    height: 28px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*LINKS*/
+
+.links{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    row-gap: 20px;
+}
+
+.links a{
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.links-3 a{
+    font-weight: bold;
+    color: white;
+}
+
+/*BOTÃO*/
+
+.idioma-btn{
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.idioma-btn i{
+    font-size: 16px;
+    color: white;
+}
+/*-----------------------------------------------------------*/
+
+/*DIREITO*/
+
+/*HEADER*/
+
+.direita{
+    margin-left: 25%;
+    width: 75%;
+}
+
+.header{
+    background-color: black;
+    width: 75%;
+    height: 8%;
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+.autocomplete{
+    width: 10%;
+    height: 100%;
+}
+
+/*SEARCH*/
+
+.search{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-icone{
+    width: 15%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icone i{
+    font-size: 20px;
+}
+
+.search-icone i:hover{
+    color: #a0a0a0;
+    cursor: pointer;
+}
+
+
+/*INPUT*/
+
+.search-input{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-input i{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input i:hover{
+    color: #a0a0a0;
+    cursor: pointer;
+}
+
+.search-input input{
+    width: 80%;
+    height: 70%;
+    border-radius: 40px;
+    background-color: #1F1F1F;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.search-input input:focus{
+    border: none;
+    outline: none;
+}
+
+.search-input input::placeholder{
+    padding-left: 20px;
+    font-size: 16px;
+    color: #a0a0a0;
+}
+
+
+/*DONWLOAD*/
+
+.download{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.download-links{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download-links a{
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.download-links a:hover{
+    transform: scale(1.02);
+    color: white;
+}
+
+.span-connection{
+    width: 5%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-links2{
+    font-weight: 500;
+    width: 40%;
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download-links2 a{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+
+.download-links2 a:hover{
+    transform: scale(1.02);
+    color: white;
+}
+
+.download-button{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-btn{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+.download-btn:hover{
+    transform: scale(1.05);
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+
+/*SECTION*/
+
+.section{
+    margin-top: 7%;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(to bottom, #222222, #121212 30%);
+    border-top-left-radius:  20px;
+    border-top-right-radius: 20px;
+}
+
+.section-cima{
+    width: 100%;
+}
+
+.section-cima-titulo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*CARD*/
+
+.section-cima-card{
+    width: 250px;
+    height: 330px;
+    border-radius: 20px;
+    transition: 0.1s ease;
+}
+
+.section-cima-card:hover{
+    background-color: #222222;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+
+/*IMAGE*/
+
+.section-cima-card-image{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-cima-card-image img{
+    border-radius: 15px;
+}
+
+/*LINK*/
+.section-cima-card-link{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.section-cima-card-link a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-cima-card-link a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*PLAY*/
+.section-cima-play{
+    width: 100%;
+    position: relative;
+}
+
+.section-cima-play i{
+    position: absolute;
+    color: black;
+    background-color: #1db954;
+    border-radius: 50%;
+    padding: 15px;
+    right: 8px;
+    top: -50px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.section-cima-card:hover .section-cima-play i{
+    opacity: 1;
+    transform: translateY(-20%);
+}
+
+/*CANTOR*/
+.section-cima-card-cantor{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-items: top;
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #ABABAB;
+}
+
+.explicito{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B3B3B3;
+    color: black;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+
+/*BANNER*/
+
+.banner{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, #AF2896, #509BF5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2{
+    margin: 0;
+    font-size: 14px;
+}
+
+.banner span{
+    font-size: 10px;
+}
+
+/*BANNER BOTAO*/
+.botao{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*CAR-LOOP 1*/
+.card-loop1{
+    display: flex;
+    gap: 20px; 
+    overflow-x: auto; 
+    padding-bottom: 10px;
+    scrollbar-width: none;
+}
+
+/*CARD 2*/
+.section-baixo-card-image{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-baixo-card-image img{
+    border-radius: 50%;
+}
+
+.card-loop2{
+    display: flex;
+    gap: 20px; 
+    overflow-x: auto; 
+    padding-bottom: 10px;
+    scrollbar-width: none;
+}

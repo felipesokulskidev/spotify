@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/index.css">
+        <script defer src="js/index.js"></script>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="esquerda">
+                <div class="logo"><i class="fa-brands fa-spotify"></i>
+                </div>
+                <div class="biblioteca"><span>Sua Biblioteca</span><i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="primeira-playlist">
+                    <span class="primeira-playlist-titulo">Crie sua primeira playlist</span>
+                    <span>É fácil, vamos te ajudar.</span>
+                    <button>Criar playlist</button>
+                </div>
+
+                <div class="podcast">
+                    <span class="primeira-playlist-titulo">Que tal seguir um podcast novo?</span>
+                    <span>Avisaremos você sobre novos episódios.</span>
+                    <button>Explore podcasts</button>
+                </div>
+
+                <div class="links">
+                    <div class="links-1">
+                        <a href="">Legal</a>
+                        <a href="">Segurança e Centro de privacidade</a>
+                        <a href="">Política de privacidade</a>
+                    </div>
+                    <div class="links-2">
+                        <a href="">Cookies</a>
+                        <a href="">Sobre anúncios</a>
+                        <a href="">Acessibilidade</a>
+                    </div>
+                    <div class="links-3">
+                        <a href="">Cookies</a>
+                    </div>
+                    
+                </div>
+
+                <div class="idioma">
+                    <button class="idioma-btn">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>Português do Brasil</span>
+                    </button>
+                </div>
+                
+            </div>
+            <div class="direita">
+                <header class="header">
+                    <div class="autocomplete"></div>
+                    <div class="search">
+                        <div class="search-icone">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="search-input">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="O que você quer ouvir?">
+                        </div>
+                    </div>
+                    <div class="download">
+                        <div class="download-links">
+                            <a href="">Premium</a>
+                            <a href="">Suporte</a>
+                            <a href="">Baixar</a>
+                        </div>
+                        <span class="span-connection">|</span>
+                        <div class="download-links2">
+                            <a href="">
+                                <i class="fa-solid fa-download"></i>
+                                <span>Instalar Aplicativo</span>
+                            </a>
+                            <a href="">Inscrever-se</a>
+                        </div>
+                        <div class="download-button">
+                            <button class="download-btn">Entrar</button>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="section">
+
+                    <span class="section-cima-titulo">Músicas em alta</span>
+                    <div class="card-loop1" id="card-loop1"></div>
+
+                    <span class="section-cima-titulo">Artistas Populares</span>
+                    <div class="card-loop2" id="card-loop2">
+                        
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="banner">
+            <div>
+                <h2>Testar o Premium de graça</h2>
+                <span>Inscreva-se para curtir músicas ilimitadas e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
+            </div>
+            <div class="banner-botao">
+                <button class="botao">Inscreva-se grátis</button>
+            </div>
+        </div>
+    </body>
+</html>
